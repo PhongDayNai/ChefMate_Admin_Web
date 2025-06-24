@@ -1,7 +1,7 @@
 "use client"
 
 import { useState, useEffect } from "react"
-import { Clock, Eye, Heart, MessageCircle, Users, AlertTriangle } from "lucide-react"
+import { Clock, Eye, Heart, MessageCircle, Users, AlertTriangle, Trash2 } from "lucide-react"
 import "bootstrap/dist/css/bootstrap.min.css"
 
 const CommentSection = ({ icon }) => {
@@ -51,6 +51,28 @@ const CommentSection = ({ icon }) => {
     } catch (err) {
       console.error("Lấy dữ liệu bình luận thất bại:", err)
       setError("Không thể tải dữ liệu bình luận. Vui lòng thử lại sau.")
+    }
+  }
+
+
+  const deleteComment = async (commentId) => {
+    try {
+      const response = await fetch(`http://localhost:8080/api/interactions/comments/${commentId}`, {
+        method: "DELETE",
+        headers: {
+          "Content-Type": "application/json",
+        },
+      })
+
+      if (!response.ok) {
+        throw new Error(`Lỗi: ${response.status}`)
+      }
+
+      console.log("Xóa bình luận thành công")
+      fetchComments()
+    } catch (err) {
+      console.error("Xóa bình luận thất bại:", err)
+      setError("Không thể xóa bình luận. Vui lòng thử lại sau.")
     }
   }
 
@@ -148,6 +170,9 @@ const CommentSection = ({ icon }) => {
                               {comment.commentUser.fullName} bình luận về "{recipeMap.name[comment.recipeId] || "Công thức không xác định"}"
                             </span>
                             <span className="text-muted small">{formatDate(comment.createdAt)}</span>
+                            <button onClick={() => Promise.all([fetchRecipes(), fetchComments()])} className="btn btn-outline-primary">
+                              Xóa bình luận <Trash2 className="ms-2" size={16} />
+                            </button>
                           </div>
                           <p className="mb-1 text-dark">{comment.content}</p>
                           <div className="text-muted small">
