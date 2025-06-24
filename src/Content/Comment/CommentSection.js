@@ -1,7 +1,7 @@
 "use client"
 
 import { useState, useEffect } from "react"
-import { X, Clock, Eye, Heart, MessageCircle, Users, AlertTriangle } from "lucide-react"
+import { Clock, Eye, Heart, MessageCircle, Users, AlertTriangle } from "lucide-react"
 import "bootstrap/dist/css/bootstrap.min.css"
 
 const CommentSection = ({ icon }) => {
@@ -88,7 +88,6 @@ const CommentSection = ({ icon }) => {
     })
   }
 
-  // Tạo map để ánh xạ recipeId sang recipeName và image
   const recipeMap = recipes.reduce(
     (map, recipe) => {
       map.name[recipe.recipeId] = recipe.recipeName
@@ -114,7 +113,7 @@ const CommentSection = ({ icon }) => {
         {loading ? (
           <div className="text-center">
             <div className="spinner-border text-primary" role="status">
-              <span className="visually-hidden">Loading...</span>
+              <span className="visually-hidden">Đang tải...</span>
             </div>
           </div>
         ) : error ? (
