@@ -1,7 +1,7 @@
 "use client"
 
 import { useState, useEffect } from "react"
-import { FileText, Loader2, AlertTriangle } from "lucide-react"
+import { FileText, AlertTriangle } from "lucide-react"
 import "bootstrap/dist/css/bootstrap.min.css"
 import DashboardSection from "../Dashboard/DashboardSection"
 
