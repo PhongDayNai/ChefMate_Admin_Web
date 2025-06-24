@@ -2,10 +2,9 @@
 
 import { useState, useEffect } from "react"
 import "./App.css"
-import Sidebar from "./SideBar"
-import Content from "./Content"
-import Header from "./Header"
-import CallStaffNotification from "./CallStaffNotification"
+import Sidebar from "./SideBar/SideBar"
+import Content from "./Content/Content"
+import Header from "./Header/Header"
 
 function App() {
   const [selectedPage, setSelectedPage] = useState("dashboard")
@@ -28,7 +27,6 @@ function App() {
 
   return (
     <>
-      <CallStaffNotification />
       <div className="App">
         <Sidebar onSelect={setSelectedPage} selectedPage={selectedPage} isOpen={sidebarOpen} />
 
