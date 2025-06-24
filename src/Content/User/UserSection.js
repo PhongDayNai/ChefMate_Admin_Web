@@ -72,7 +72,7 @@ const UserManagement = () => {
         {loading ? (
           <div className="loading-container">
             <Loader2 className="h-8 w-8 loading-spinner" />
-            <span className="ml-2 text-gray-600">Loading users...</span>
+            <span className="ml-2 text-gray-600">Đang tải...</span>
           </div>
         ) : (
           <>
