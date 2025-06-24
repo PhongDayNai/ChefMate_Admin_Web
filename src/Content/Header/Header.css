@@ -1,0 +1,82 @@
+/* Header.css */
+.header {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  width: 100%;
+  padding-left: 12px;
+}
+
+.header-gradient {
+  background: linear-gradient(90deg, #FDBA74 0%, #F97316 100%);
+}
+
+.text-xl {
+  color: snow;
+}
+
+.search-container {
+  position: relative;
+  max-width: 500px;
+  width: 100%;
+  margin: 0 auto;
+  transition: all 0.3s ease;
+}
+
+.search-input {
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.15);
+  border: none;
+  border-radius: 9999px;
+  padding: 0.6rem 1rem 0.6rem 2.5rem;
+  color: white;
+  font-size: 0.875rem;
+  transition: all 0.3s ease;
+  backdrop-filter: blur(4px);
+}
+
+.search-input:focus {
+  background-color: rgba(255, 255, 255, 0.25);
+  box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.2);
+  outline: none;
+}
+
+.search-input::placeholder {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.search-icon {
+  position: absolute;
+  left: 0.75rem;
+  top: 50%;
+  transform: translateY(-50%);
+  color: rgba(255, 255, 255, 0.7);
+  pointer-events: none;
+}
+
+.notification-badge {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 8px;
+  width: 8px;
+  border-radius: 50%;
+  background-color: #f87171;
+}
+
+.user-avatar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 32px;
+  width: 32px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+@media (max-width: 768px) {
+  .search-container {
+    max-width: none;
+  }
+}
+
