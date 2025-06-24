@@ -1,7 +1,7 @@
 "use client"
 
 import { useState, useEffect } from "react"
-import { X, Clock, Eye, Heart, MessageCircle, Users, ChefHat, AlertTriangle } from "lucide-react"
+import { Clock, Eye, Heart, MessageCircle, Users, ChefHat, AlertTriangle } from "lucide-react"
 import "bootstrap/dist/css/bootstrap.min.css"
 
 const RecipeSection = ({ icon }) => {
@@ -63,7 +63,7 @@ const RecipeSection = ({ icon }) => {
           <h2 className="h4 fw-bold text-dark">Quản lý Công thức</h2>
         </div>
         <button onClick={fetchRecipes} className="btn btn-outline-primary">
-          Làm mới Công thức
+          Làm mới
         </button>
       </div>
 
@@ -71,7 +71,7 @@ const RecipeSection = ({ icon }) => {
         {loading ? (
           <div className="text-center">
             <div className="spinner-border text-primary" role="status">
-              <span className="visually-hidden">Loading...</span>
+              <span className="visually-hidden">Đang tải...</span>
             </div>
           </div>
         ) : error ? (
