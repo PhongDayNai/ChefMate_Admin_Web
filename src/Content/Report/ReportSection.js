@@ -61,7 +61,6 @@ const ReportSection = () => {
     fetchReport()
   }, [])
 
-  // Chuẩn bị dữ liệu cho biểu đồ
   const chartData = {
     labels: reportData.map(item => `Tháng ${item.month}/${item.year}`),
     datasets: [
@@ -105,6 +104,13 @@ const ReportSection = () => {
 
   return (
     <div className="container py-4">
+      <div className="d-flex justify-content-between align-items-center mb-4">
+        <div className="d-flex align-items-center">
+        </div>
+        <button onClick={fetchReport} className="btn btn-outline-primary">
+          Làm mới
+        </button>
+      </div>
       <DashboardSection title="Báo cáo Số lượng Công thức" icon={<FileText className="h-5 w-5" />}>
         {error && (
           <div className="alert alert-danger d-flex align-items-center" role="alert">
@@ -126,12 +132,10 @@ const ReportSection = () => {
           </div>
         ) : (
           <>
-            {/* Biểu đồ */}
             <div className="mb-5">
               <Line data={chartData} options={chartOptions} />
             </div>
 
-            {/* Bảng dữ liệu */}
             <div className="table-responsive">
               <table className="table table-striped table-hover">
                 <thead>
