@@ -11,6 +11,7 @@
 - **ReactJS**: Xây dựng SPA với component tái sử dụng.
 - **React Router**: Quản lý điều hướng, tích hợp Sidebar.
 - **Lucide-React**: Cung cấp biểu tượng cho Sidebar (Home, Users, BookOpen, MessageSquareText, BarChart).
+- **Chart.js**: Thư viện tạo biểu đồ cho báo cáo số lượng công thức theo tháng.
 
 ## 2. Kiến trúc: Mô hình **React Component-based** với kiến trúc **Single Page Application (SPA)**
 
