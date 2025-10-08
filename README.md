@@ -36,3 +36,15 @@
 - **Hiển thị công thức**: Xem thông tin công thức.
 - **Quản lý bình luận**:  **Xem, xóa bình luận không phù hợp qua trang "Bình luận".**
 - **Lập báo cáo số lượng công thức theo tháng**: Tạo biểu đồ trực quan qua trang "Báo cáo", phân tích xu hướng đăng tải công thức.
+
+<img width="979" height="552" alt="image" src="https://github.com/user-attachments/assets/17b4e730-410d-4d78-bde3-4f69b307bdf7" />
+
+<img width="979" height="552" alt="image" src="https://github.com/user-attachments/assets/a5169fd9-d93b-447b-910e-07847262135d" />
+
+<img width="979" height="552" alt="image" src="https://github.com/user-attachments/assets/a8cc4d86-ea5a-4112-b6dd-d5caa6a40137" />
+
+<img width="979" height="552" alt="image" src="https://github.com/user-attachments/assets/1d5db8cf-02fd-478c-a9e0-da600d8ee7db" />
+
+<img width="979" height="552" alt="image" src="https://github.com/user-attachments/assets/624d3e8f-79ac-4703-a386-f2327987e5a8" />
+
+<img width="979" height="552" alt="image" src="https://github.com/user-attachments/assets/4fdb25aa-2b76-4f15-9247-ca8a3ceef6a3" />
